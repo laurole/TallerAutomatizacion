@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Select products by category and section add to cart and remove products from cart" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-16T23:39:43" hostname="DESKTOP-LBLQDIH" time="0.208">
+  <properties/>
+  <testcase name="Remove products from cart" classname="Select products by category and section add to cart and remove products from cart" time="0.208"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
