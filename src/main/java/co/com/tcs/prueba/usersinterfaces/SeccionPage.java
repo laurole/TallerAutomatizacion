@@ -13,7 +13,7 @@ public class SeccionPage extends PageObject {
             locatedBy("//ul[@id='select-dropdown-list-product-quantity']/li[@data-value={0}]");
 
     public static final Target PRICE = Target.the("price_product").
-            locatedBy("//div[@class='product-price-lg']/div/span[@class='price-main-md'");
+            locatedBy("//div[@class='product-price-lg']/div/span[@class='price-main-md'][1]");
     public static final Target BUTTON_BUY = Target.the("button_buy")
             .locatedBy("//button[@id='buy-now']");
     public static final Target GO_TO_CART = Target.the("go to cart").

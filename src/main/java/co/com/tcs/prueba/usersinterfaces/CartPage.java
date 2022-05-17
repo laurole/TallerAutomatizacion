@@ -9,4 +9,7 @@ public class CartPage extends PageObject {
             locatedBy("//a[@ng-click='cart.removeItem(item.sku)']");
     public static final Target EMPTY_CAR_MESSAGE = Target.the("Empty car message").
             locatedBy("//h2[@class='highlight col-md-6 offset-md-3']");
+
+    public static final Target NAME_PRODUCT = Target.the("name product").
+            locatedBy("//span[@class='product-name']");
 }

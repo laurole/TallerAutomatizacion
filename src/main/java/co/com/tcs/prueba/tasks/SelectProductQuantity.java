@@ -2,6 +2,7 @@ package co.com.tcs.prueba.tasks;
 
 
 import co.com.tcs.prueba.usersinterfaces.SeccionPage;
+import co.com.tcs.prueba.utils.CreateArchive;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
@@ -24,7 +25,13 @@ public class SelectProductQuantity implements Task {
         actor.attemptsTo(Click.on(SeccionPage.TITLE_PRODUCT.of(product)),
                Click.on(SeccionPage.DROPDOWN_QUANTITY),
                Click.on(SeccionPage.LIST_OPTIONS.of(quantity)));
-                //Click.on(SeccionPage.BUTTON_BUY));
+
+        String precie = SeccionPage.PRICE.resolveAllFor(actor).get(0).getText().substring(1).replace(".","");
+       // int precio = Integer.parseInt(precie);
+        // int units = Integer.parseInt(quantity);
+
+        //CreateArchive ca = new CreateArchive();
+        //ca.createArchive(product, precio, units);
     }
     public static SelectProductQuantity chooseProductQuantity(String product, String quantity){
         return Tasks.instrumented(SelectProductQuantity.class, product, quantity);

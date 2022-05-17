@@ -45,7 +45,7 @@ public class ValidateCartDataStepsDefinitions {
         OnStage.theActorInTheSpotlight().attemptsTo(AddCart.goToCart());
     }
     @Then("^the user should see in the cart the product, the quantity and the new value match the total of products$")
-    public void theUserShouldSeeInTheCartTheProductTheQuantityAndTheNewValueMatchTheTotalOfProducts(DataTable arg1) {
+    public void theUserShouldSeeInTheCartTheProductTheQuantityAndTheNewValueMatchTheTotalOfProducts() {
 
     }
     @Then("^the user goes to the cart and removes the products$")
