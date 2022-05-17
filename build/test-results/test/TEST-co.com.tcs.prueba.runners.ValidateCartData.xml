@@ -5,9 +5,9 @@
 ?[31mFailed scenarios:?[0m
 ?[31msrc/test/resources/features/validate_cart_data.feature:14 ?[0m# Remove products from cart
 
-2 Scenarios (?[31m1 failed?[0m, ?[32m1 passed?[0m)
-10 Steps (?[31m1 failed?[0m, ?[32m9 passed?[0m)
-0m47,397s
+1 Scenarios (?[31m1 failed?[0m)
+5 Steps (?[31m1 failed?[0m, ?[32m4 passed?[0m)
+0m25,919s
 
 java.lang.AssertionError: 
 Expected: "No hay productos en tu carrito"

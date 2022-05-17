@@ -1,12 +1,12 @@
 package co.com.tcs.prueba.stepsdefinitions;
 
+import co.com.tcs.prueba.questions.TheInformation;
 import co.com.tcs.prueba.questions.TheMessage;
 import co.com.tcs.prueba.tasks.AddCart;
 import co.com.tcs.prueba.tasks.GoToCartAndDelete;
 import co.com.tcs.prueba.tasks.SelectCategorySeccion;
 import co.com.tcs.prueba.tasks.SelectProductQuantity;
 import co.com.tcs.prueba.usersinterfaces.LinioPage;
-import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -46,7 +46,7 @@ public class ValidateCartDataStepsDefinitions {
     }
     @Then("^the user should see in the cart the product, the quantity and the new value match the total of products$")
     public void theUserShouldSeeInTheCartTheProductTheQuantityAndTheNewValueMatchTheTotalOfProducts() {
-
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(TheInformation.isCorrect()));
     }
     @Then("^the user goes to the cart and removes the products$")
     public void theUserGoesToTheCartAndRemovesTheProducts() {

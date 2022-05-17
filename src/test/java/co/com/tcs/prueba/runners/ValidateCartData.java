@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src\\test\\resources\\features\\validate_cart_data.feature",
         glue ="co.com.tcs.prueba.stepsdefinitions",
-        snippets = SnippetType.CAMELCASE
-        //tags = "@scenario1"
+        snippets = SnippetType.CAMELCASE,
+        tags = "@scenario2"
 )
 public class ValidateCartData {
 

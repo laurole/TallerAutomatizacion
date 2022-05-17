@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.targets.Target;
 public class SeccionPage extends PageObject {
 
     public static final Target TITLE_PRODUCT = Target.the("title_product").
-            locatedBy("//meta[@content={0}]/..");
+            locatedBy("//meta[@content=\"{0}\"]/..");
     public static final Target DROPDOWN_QUANTITY = Target.the("dropDown").
             locatedBy("//div[@class='select-dropdown select-dropdown-product-quantity']");
     public static final Target LIST_OPTIONS = Target.the("List_options").

@@ -11,5 +11,7 @@ public class CartPage extends PageObject {
             locatedBy("//h2[@class='highlight col-md-6 offset-md-3']");
 
     public static final Target NAME_PRODUCT = Target.the("name product").
-            locatedBy("//span[@class='product-name']");
+            locatedBy("//a[contains(text(),'Super Mega Combo Azul Queen 160x190 Resortado Mars')]");
+    public static final Target SUBTOTAL = Target.the("Subtotal").
+            locatedBy("//span[@class='price-main-sm float-right subtotal-price ml-auto']");
 }
