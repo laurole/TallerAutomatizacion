@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Select products by category and section add to cart and remove products from cart" skipped="0" tests="1" time="0.3" timestamp="2022-05-16 06:39:42"><testcase name="Remove products from cart"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Select products by category and section add to cart and remove products from cart" skipped="0" tests="1" time="43.94" timestamp="2022-05-17 06:04:34"><testcase name="Remove products from cart"><failure message="&#10;Expected: &quot;No hay productos en tu carrito&quot;&#10;     but: was &quot;NO TIENES PRODUCTOS EN TU CARRITO&quot;" type="java.lang.AssertionError">
+Expected: "No hay productos en tu carrito"
+     but: was "NO TIENES PRODUCTOS EN TU CARRITO"</failure><system-err>
+Expected: "No hay productos en tu carrito"
+     but: was "NO TIENES PRODUCTOS EN TU CARRITO"&#13;
+co.com.tcs.prueba.stepsdefinitions.ValidateCartDataStepsDefinitions.theUserShouldSeeTheMessage(ValidateCartDataStepsDefinitions.java:57)&#13;
+✽.the user should see the message No hay productos en tu carrito(src/test/resources/features/validate_cart_data.feature:19)&#13;
+</system-err></testcase></testsuite>
